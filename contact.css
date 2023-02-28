@@ -83,19 +83,3 @@ textarea.contact-form-text{
 .contact-form-btn1:hover{
     background: #2980b9;
 }
-.icons a{
-    text-decoration: none;
-    color: darkblue;
-}
-.icons ion-icon{
-    margin-left: 15%;
-    color: darkblue;
-    margin-right: -200px;
-    margin-top: 40px;
-    font-size: 40px;
-    transition: 0.4s ease;
-    
-}
-.icons ion-icon:hover{
-    color: rgb(63, 62, 62);
-}
