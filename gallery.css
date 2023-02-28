@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Gabriola',sans-serif;
+    background-color: bisque;
+    height: fit-content;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+.image-grid {
+    line-height:0;
+    -webkit-column-count:5; 
+    -webkit-column-gap:5px; 
+    -moz-column-count:5;
+    -moz-column-gap:5px;
+    column-count:4;
+    column-gap:5px;
+    margin-top: 125px;
+ }
+ .image-grid img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom:5px; 
+    margin-left: 5px;
+    margin-right: 5px;
+    
+ }
+ @media (max-width: 1200px) {
+    .image-grid {
+     -moz-column-count:    4;
+     -webkit-column-count: 4;
+     column-count:         4;
+    }
+ }
+ @media (max-width: 1000px) {
+    .image-grid {
+     -moz-column-count:    3;
+     -webkit-column-count: 3;
+     column-count:         3;
+    }
+ }
+
+ 
+ @media (max-width: 800px) {
+    .image-grid {
+     -moz-column-count:    2;
+     -webkit-column-count: 2;
+     column-count:         2;
+    }
+ }
+ 
+ 
+ @media (max-width: 400px) {
+   .image-grid {
+     -moz-column-count:    1;
+     -webkit-column-count: 1;
+     column-count:         1;
+    }
+ }
+
+ .image-grid img:hover{
+    filter: none;
+    transition: filter 2s;
+ }
+  .image-grid img:hover{
+    animation: img 1s ease infinite ;
+    width: 100%;
+    height: 100%;
+  }
+  @keyframes img {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
